@@ -8,7 +8,8 @@
 > **Intelligent assistant powered by Retrieval-Augmented Generation (RAG) for the Moroccan Tax Administration (DGI)**  
 > *Developed during a 3-month internship at DGI-SARP (July-September 2025)*
 
-![Demo](assets/demo.gif)
+![Demo](assets/chat-interface.png)
+![Demo](assets/arabic-query.png)
 
 ---
 
@@ -42,8 +43,8 @@ This system enables DGI employees to **query 2,100+ pages of fiscal documentatio
 
 ## 🏗️ Architecture
 
-![System Architecture](assets/Global RAG architecture showing offline indexing and online query phases.png)
- 
+![System Architecture](assets/architecture.png)
+
 ### High-Level Pipeline
 ```
 ┌─────────────────┐      ┌──────────────┐      ┌─────────────┐
@@ -297,15 +298,17 @@ This project was developed collaboratively by:
 
 **Project Authors:**
 
+### Salma BOUTANFIT
+- 📧 Email: [boutanfitsalma1@gmail.com](mailto:boutanfitsalma1@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/salma-boutanfit](https://linkedin.com/in/salma-boutanfit)
+- 🐙 GitHub: [@Boutanfitsalma](https://github.com/Boutanfitsalma)
+- 
 ### Yassine MICHAL
 - 📧 Email: [yassinemichaal4@gmail.com](mailto:yassinemichaal4@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/yassine-michal](https://linkedin.com/in/yassine-michal/)
 - 🐙 GitHub: [@Michalyassine](https://github.com/Michalyassine)
 
-### Salma BOUTANFIT
-- 📧 Email: [boutanfitsalma1@gmail.com](mailto:boutanfitsalma1@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/salma-boutanfit](https://linkedin.com/in/salma-boutanfit)
-- 🐙 GitHub: [@Boutanfitsalma](https://github.com/Boutanfitsalma)
+
 
 ---
 
