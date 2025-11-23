@@ -42,8 +42,9 @@ This system enables DGI employees to **query 2,100+ pages of fiscal documentatio
 
 ## 🏗️ Architecture
 
-![System Architecture](assets/architecture.png)
-
+![System Architecture](assets/Global RAG architecture showing offline indexing and online query phases.png)
+![System Architecture](assets/System Architecture.png)
+ 
 ### High-Level Pipeline
 ```
 ┌─────────────────┐      ┌──────────────┐      ┌─────────────┐
@@ -74,7 +75,7 @@ Quantitative metrics using **RAGAS framework** (10 bilingual test queries):
 | **Context Recall** | 0.583 | Coverage of required information |
 | **BERTScore (F1)** | 0.886 | Semantic similarity to ground truth |
 
-![Results](assets/results.png)
+![Results](assets/ragas metrics.png)
 
 **Full evaluation methodology**: [docs/EVALUATION.md](docs/EVALUATION.md)
 
@@ -158,7 +159,6 @@ answer = generator.generate(
 print(answer)
 ```
 
-**More examples**: [examples/](examples/)
 
 ---
 
@@ -175,8 +175,7 @@ moroccan-fiscal-rag-chatbot/
 │   └── pipeline.py         # End-to-end orchestration
 ├── data/                   # Fiscal documents (JSON format)
 ├── docs/                   # Technical documentation
-├── assets/                 # Images for README
-├── examples/               # Usage examples
+├── assets/                 # Images for README            
 ├── docker-compose.yml      # Service orchestration
 ├── Dockerfile              # API container definition
 ├── main_api.py             # FastAPI entry point
@@ -236,7 +235,7 @@ moroccan-fiscal-rag-chatbot/
 
 ## 🎓 Academic Context
 
-**Internship Report**: [Full PDF Report](assets/Rapport_de_stage_2A_BI_A.pdf)
+**Internship Report**: [Full PDF Report](assets/Rapport_de_stage_2A.pdf)
 
 **Supervised by**:
 - Mr. Oussama El Mahboubi (DGI-SARP)
