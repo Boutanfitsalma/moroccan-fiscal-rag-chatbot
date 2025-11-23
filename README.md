@@ -211,18 +211,7 @@ moroccan-fiscal-rag-chatbot/
 
 ---
 
-## 📈 Performance Characteristics
 
-| Metric | Value | Notes |
-|--------|-------|-------|
-| **Index Size** | 2,100+ pages | 16 documents (2011-2025) |
-| **Vector Dimension** | 768 | mpnet-base-v2 embeddings |
-| **Avg Query Time** | 4.2s | Including retrieval + generation |
-| **Retrieval Precision@5** | 98% | Top-5 documents |
-| **Concurrent Users** | 50+ | Tested load capacity |
-| **Storage Footprint** | ~3GB | Vectors + metadata |
-
----
 
 ## 🔐 Security & Privacy
 
