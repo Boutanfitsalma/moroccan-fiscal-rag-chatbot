@@ -76,7 +76,6 @@ Quantitative metrics using **RAGAS framework** (10 bilingual test queries):
 | **Context Recall** | 0.583 | Coverage of required information |
 | **BERTScore (F1)** | 0.886 | Semantic similarity to ground truth |
 
-![Results](assets/ragas metrics.png)
 
 **Full evaluation methodology**: [docs/EVALUATION.md](docs/EVALUATION.md)
 
