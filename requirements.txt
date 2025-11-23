@@ -1,0 +1,28 @@
+# --- Core RAG & Vector DB ---
+# These libraries are the foundation of the RAG pipeline.
+chromadb
+sentence-transformers
+loguru
+tqdm
+
+# --- LLM & Generation (LangChain/API) ---
+# For connecting to local (Ollama) and remote (OpenRouter) models.
+langchain
+langchain-community # For Ollama
+requests          # For direct API calls to OpenRouter
+python-dotenv     # For managing API keys from the .env file
+
+# --- Web API Server ---
+# For creating the backend API that the UI will connect to.
+fastapi
+uvicorn[standard]  # 'standard' includes performance extras
+python-multipart   # Required for file uploads in FastAPI
+
+# --- Document Chunking Dependencies ---
+# These are required by your advanced 'parsinglatest.py' (chunker.py) script.
+PyMuPDF              # For fitz, high-performance PDF reading
+pdfplumber           # For text and table extraction
+easyocr              # For Optical Character Recognition (OCR) on difficult pages
+numpy                # A core dependency for EasyOCR and OpenCV
+opencv-python-headless # For image processing (required by EasyOCR and Camelot)
+camelot-py[cv]       # Specifically for table extraction from PDFs, with OpenCV extras

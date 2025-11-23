@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  backend-api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: fiscal_rag_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./vector_db:/app/vector_db
+      - ./data:/app/data
+      - ./.env:/app/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:latest
+    container_name: open_webui
+    ports:
+      - "3000:8080"
+    environment:
+      - 'OPENAI_API_BASE_URL=http://backend-api:8000/v1'
+      - 'OPENAI_API_KEY=dummy-key'
+    volumes:
+      - ./open-webui:/app/backend/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - backend-api
+    restart: unless-stopped
