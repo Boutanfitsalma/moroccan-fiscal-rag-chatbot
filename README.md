@@ -43,7 +43,6 @@ This system enables DGI employees to **query 2,100+ pages of fiscal documentatio
 ## 🏗️ Architecture
 
 ![System Architecture](assets/Global RAG architecture showing offline indexing and online query phases.png)
-![System Architecture](assets/System Architecture.png)
  
 ### High-Level Pipeline
 ```
