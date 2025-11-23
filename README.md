@@ -9,6 +9,7 @@
 > *Developed during a 3-month internship at DGI-SARP (July-September 2025)*
 
 ![Demo](assets/chat-interface.png)
+![Demo](assets/system-response.png)
 ![Demo](assets/arabic-query.png)
 
 ---
