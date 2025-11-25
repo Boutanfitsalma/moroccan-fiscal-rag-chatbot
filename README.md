@@ -21,7 +21,7 @@ This system enables DGI employees to **query 2,100+ pages of fiscal documentatio
 ### 🚀 Key Achievements
 - **98% retrieval precision** using advanced semantic search + re-ranking
 - **< 5 seconds** average response time for complex multi-document queries
-- **Bilingual support** (French/Arabic) with multilingual embeddings
+- **Bilingual support** (French/Arabic) 
 - **OCR processing** of 1,240+ pages of scanned historical documents
 - **Production-ready deployment** via Docker with OpenWebUI interface
 
